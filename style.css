@@ -228,7 +228,7 @@ footer {
 
 
 @media (max-width: 768px) {
-  main h1 {
+  article h1 {
     font-size: 1.8rem;
   }
 
