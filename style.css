@@ -1,3 +1,106 @@
+/* Sección de Noticias */
+.noticias-section {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #5d6d7e;
+  margin-bottom: 50px;
+}
+
+/* Grid de Noticias */
+.noticias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
+}
+
+/* Tarjetas Simplificadas */
+.noticia-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-top: 3px solid #FF9542;
+  position: relative;
+}
+
+.noticia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 149, 66, 0.15);
+  border-color: #FF9542;
+}
+
+/* Categoría */
+.card-categoria {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #FF9542;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Contenido de la tarjeta */
+.card-title {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+  padding-right: 80px;
+}
+
+.card-descripcion {
+  color: #5d6d7e;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* Meta información */
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #d1d1d1;
+}
+
+.card-fecha {
+  color: #FF9542;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.card-link {
+  color: #FF9542;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.card-link:hover {
+  color: #e67e22;
+  text-decoration: underline;
+}
+
 /* Footer Styles */
 footer {
   background: #ffffff;
