@@ -55,7 +55,7 @@ footer {
 }
 
 footer {
-  background-color: #fffaf5;
+  background-color: #fff;
   color: #333;
   padding: 40px 20px;
   margin-top: 60px;
@@ -148,6 +148,4 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
-  background-color: #111111;
-}
+
