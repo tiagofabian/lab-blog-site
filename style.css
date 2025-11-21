@@ -3,13 +3,7 @@ body {
   background-color: #ededed;
 }
 
-nav {
-  
-}
 
-footer {
-
-}
 
 #formulario {
   width: 380px;
@@ -67,7 +61,7 @@ footer {
 
 #formulario button:hover {
   opacity: 0.9;
-
+}  
 /* Sección de Noticias */
 .noticias-section {
   padding: 60px 0;
@@ -681,4 +675,4 @@ footer {
 .galeria img:hover {
   transform: scale(1.03);
 }
-}
+
