@@ -1,37 +1,118 @@
+<!--contact-->
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Agrupación Patitas</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>Agrupación Patitas</title>
 </head>
 <body>
   <nav>
     <div class="brand">
-    <img src="./img/logo.jpeg" alt="logo" width="150px">
-    <h2>Agrupación Patitas</h2>
-  </div>
-    <div class="brand">
-      <img src="./img/logo.jpeg" alt="logo" width="150px">
+      <img class="logo" src="./images/logo.jpeg" alt="logo" width="150px">
       <h2>Agrupación Patitas</h2>
     </div>
     <ul>
-      <li><a href="home.html">Inicio</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-      <li><a href="about-us.html">Sobre Nosotros</a></li>
       <li><a href="home.html">Inicio</a></li>
       <li><a href="contact.html">Contacto</a></li>
       <li><a href="about-us.html">Nosotros</a></li>
     </ul>
   </nav>
   <article>
+    <div class="container">
+      <div class="container-form-info">
+        <div class="info">
+          <header class="header">
+            <h1>Contáctanos</h1>
+            <p>
+              Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros.
+            </p>
+          </header>
+          <section>
+            <div class="info-card">
+              <div class="icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Ubicación</h3>
+                <p>Av. Principal #1234<br />Santiago, Chile</p>
+              </div>
+            </div>
 
-    <div id="faq">
+            <div class="info-card">
+              <div class="icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="info-content">
+                <h3>Horario de Atención</h3>
+                <p>
+                  Lunes a Viernes: 9:00 - 18:00 hrs<br />
+                  Sábados: 10:00 - 14:00 hrs<br />
+                  Domingos: Cerrado
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h3>Teléfono</h3>
+                <p>
+                  +56 2 2345 6789<br />
+                  +56 9 8765 4321
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <p>
+                  info@empresa.cl<br />
+                  ventas@empresa.cl
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="form">
+          <form action="#" method="POST" enctype="multipart/form-data" id="formulario">
+            <img src="./images/banner-peluditos.jpg" alt="proteccion_animal" width="380px">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required >
+
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" required >
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required >
+
+            <label for="teléfono">Teléfono</label>
+            <input type="tel" id="teléfono" name="teléfono" required >
+
+            <label for="solicitud">Solicitud</label>
+            <textarea id="solicitud" name="solicitud" rows="4" required></textarea>
+
+            <label for="imagen">Adjuntar imagen (opcional)</label>
+            <input type="file" id="imagen" name="imagen" accept="image/*" style="margin-bottom:15px;">
+
+            <button type="submit" style="width:100%; padding:10px; background:#007bff; color:white; border:none; cursor:pointer;">
+              Enviar formulario
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div id="faq">
       <h2>Preguntas Frecuentes (FAQ)</h2>
 
       <div class="faq-item">
@@ -94,230 +175,82 @@
         </p>
       </div>
     </div>
+      
 
-    <div class="container">
-      <header class="header">
-        <h1>Contáctanos</h1>
-        <p>
-          Estamos aquí para ayudarte. No dudes en ponerte en contacto con nosotros.
-        </p>
-      </header>
-
-      <main class="contact-grid">
-        <!-- Información de Contacto -->
-        <section class="contact-info">
-          <h2>Preguntas Frecuentes (FAQ)</h2>
-
-          <div class="faq-item">
-            <h3>1. ¿Qué es el bienestar animal?</h3>
-            <p>
-              El bienestar animal se refiere a las condiciones que permiten que un
-              animal viva de forma saludable, segura y libre de sufrimiento,
-              respetando siempre sus necesidades físicas y emocionales.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>2. ¿Por qué es importante cuidar el bienestar de los animales?</h3>
-            <p>
-              Porque los animales, al igual que nosotros, sienten dolor, miedo,
-              alegría y estrés. Cuidar de ellos es una responsabilidad ética que
-              contribuye a un entorno más equilibrado y una convivencia respetuosa.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>3. ¿Qué puedo hacer para ayudar a los animales en mi comunidad?</h3>
-            <p>
-              Puedes adoptar mascotas, donar a refugios, participar en campañas de
-              esterilización, reportar maltrato y promover la educación sobre el
-              cuidado animal.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>4. ¿Es mejor adoptar o comprar una mascota?</h3>
-            <p>
-              Siempre es mejor <strong>adoptar</strong>, ya que muchos animales
-              necesitan un hogar. Adoptar salva vidas y ayuda a reducir la
-              sobrepoblación.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>5. ¿Cómo sé si estoy cuidando bien a mi mascota?</h3>
-            <p>
-              Una mascota sana debe tener buena alimentación, agua fresca, atención
-              veterinaria, ejercicio, un entorno limpio y cariño.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>6. ¿Qué debo hacer si veo un caso de maltrato animal?</h3>
-            <p>
-              Debes reportarlo a las autoridades o a organizaciones protectoras.
-              Evita intervenir si puede ser peligroso.
-            </p>
-          </div>
-
-          <div class="faq-item">
-            <h3>7. ¿Puedo ser voluntario en un refugio?</h3>
-            <p>
-              Sí. Muchos refugios necesitan voluntarios para pasear perros, limpiar
-              áreas, socializar animales o asistir en eventos de adopción.
-            </p>
-          </div>
-          <div class="info-card">
-            <div class="icon">
-              <i class="fas fa-map-marker-alt"></i>
+      <!-- Redes Sociales -->
+      <section class="social-section">
+        <h2>Síguenos en Redes Sociales</h2>
+        <div class="social-grid">
+          <a href="#" class="social-card">
+            <div class="social-icon">
+              <img class="logo-rrss" src="./images/facebook.png"/>
             </div>
-            <div class="info-content">
-              <h3>Ubicación</h3>
-              <p>Av. Principal #1234<br />Santiago, Chile</p>
+            <span>Facebook</span>
+          </a>
+
+          <a href="#" class="social-card">
+            <div class="social-icon">
+              <img class="logo-rrss" src="./images/instagram.png"/>
             </div>
+            <span>Instagram</span>
+          </a>
+
+          <a href="#" class="social-card">
+            <div class="social-icon">
+              <img class="logo-rrss" src="./images/gorjeo.png"/>
+            </div>
+            <span>Twitter</span>
+          </a>
+
+          <a href="#" class="social-card">
+            <div class="social-icon">
+              <img class="logo-rrss" src="./images/linkedin.png"/>
+            </div>
+            <span>LinkedIn</span>
+          </a>
+
+          <a href="#" class="social-card">
+            <div class="social-icon">
+              <img class="logo-rrss" src="./images/youtube.png"/>
+            </div>
+            <span>YouTube</span>
+          </a>
+
+          <a href="#" class="social-card">
+            <div class="social-icon">
+              <img class="logo-rrss" src="./images/whatsapp.png"/>
+            </div>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Mapa de Ubicación -->
+      <section class="map-section">
+        <h2>Nuestra Ubicación</h2>
+        <div class="map-container">
+          <!-- Puedes reemplazar este iframe con tu mapa real de Google Maps -->
+          <div class="map-placeholder">
+            <i class="fas fa-map"></i>
+            <p>Mapa de ubicación</p>
+            <small>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.123456789012!2d-70.12345678901234!3d-33.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDA3JzI0LjQiUyA3MMKwMDcnMjQuNCJX!5e0!3m2!1ses!2scl!4v1234567890123!5m2!1ses!2scl"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </small>
           </div>
-
-          <div class="info-card">
-            <div class="icon">
-              <i class="fas fa-clock"></i>
-            </div>
-            <div class="info-content">
-              <h3>Horario de Atención</h3>
-              <p>
-                Lunes a Viernes: 9:00 - 18:00 hrs<br />
-                Sábados: 10:00 - 14:00 hrs<br />
-                Domingos: Cerrado
-              </p>
-            </div>
-          </div>
-
-          <div class="info-card">
-            <div class="icon">
-              <i class="fas fa-phone"></i>
-            </div>
-            <div class="info-content">
-              <h3>Teléfono</h3>
-              <p>
-                +56 2 2345 6789<br />
-                +56 9 8765 4321
-              </p>
-            </div>
-          </div>
-
-          <div class="info-card">
-            <div class="icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="info-content">
-              <h3>Email</h3>
-              <p>
-                info@empresa.cl<br />
-                ventas@empresa.cl
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Redes Sociales -->
-        <section class="social-section">
-          <h2>Síguenos en Redes Sociales</h2>
-          <div class="social-grid">
-            <a href="#" class="social-card">
-              <div class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </div>
-              <span>Facebook</span>
-            </a>
-
-            <a href="#" class="social-card">
-              <div class="social-icon">
-                <i class="fab fa-instagram"></i>
-              </div>
-              <span>Instagram</span>
-            </a>
-
-            <a href="#" class="social-card">
-              <div class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </div>
-              <span>Twitter</span>
-            </a>
-
-            <a href="#" class="social-card">
-              <div class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </div>
-              <span>LinkedIn</span>
-            </a>
-
-            <a href="#" class="social-card">
-              <div class="social-icon">
-                <i class="fab fa-youtube"></i>
-              </div>
-              <span>YouTube</span>
-            </a>
-
-            <a href="#" class="social-card">
-              <div class="social-icon">
-                <i class="fab fa-whatsapp"></i>
-              </div>
-              <span>WhatsApp</span>
-            </a>
-          </div>
-        </section>
-
-        <!-- Mapa de Ubicación -->
-        <section class="map-section">
-          <h2>Nuestra Ubicación</h2>
-          <div class="map-container">
-            <!-- Puedes reemplazar este iframe con tu mapa real de Google Maps -->
-            <div class="map-placeholder">
-              <i class="fas fa-map"></i>
-              <p>Mapa de ubicación</p>
-              <small
-                ><iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.123456789012!2d-70.12345678901234!3d-33.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDA3JzI0LjQiUyA3MMKwMDcnMjQuNCJX!5e0!3m2!1ses!2scl!4v1234567890123!5m2!1ses!2scl"
-                  width="100%"
-                  height="100%"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                >
-                </iframe
-              ></small>
-            </div>
-          </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </div>
-    
-    <form action="#" method="POST" enctype="multipart/form-data" id="formulario">
-      <img src="./images/banner-peluditos.jpg" alt="proteccion_animal" width="380px">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" required style="width:100%; padding:8px; margin-bottom:10px;">
-
-      <label for="apellido">Apellido</label>
-      <input type="text" id="apellido" name="apellido" required style="width:100%; padding:8px; margin-bottom:10px;">
-
-      <label for="correo">Correo</label>
-      <input type="email" id="correo" name="correo" required style="width:100%; padding:8px; margin-bottom:10px;">
-
-      <label for="telefono">Teléfono</label>
-      <input type="tel" id="telfono" name="telefono" required style="width:100%; padding:8px; margin-bottom:10px;">
-
-      <label for="solicitud">Solicitud</label>
-      <textarea id="solicitud" name="solicitud" rows="4" required style="width:100%; padding:8px; margin-bottom:10px;"></textarea>
-
-      <label for="imagen">Adjuntar imagen (opcional)</label>
-      <input type="file" id="imagen" name="imagen" accept="image/*" style="margin-bottom:15px;">
-
-      <button type="submit" style="width:100%; padding:10px; background:#007bff; color:white; border:none; cursor:pointer;">
-        Enviar formulario
-      </button>
-
-    </form>
   </article>
+
   <footer>
     <!-- footer -->
     <div class="footer-content">
@@ -327,7 +260,8 @@
             <p>Calle Principal 123</p>
             <p>Narnia</p>
             <p>
-                <a href="https://www.google.com/maps/place/Narnia/@-33.7725103,-70.9124023,14.38z/data=!4m6!3m5!1s0x96631d002b621a15:0x5829021808137f92!8m2!3d-33.7604856!4d-70.9286604!16s%2Fg%2F11y8fx05vz?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver en el mapa</a>
+                <a href="https://www.google.com/maps/place/Narnia/@-33.7725103,-70.9124023,14.38z/data=!4m6!3m5!1s0x96631d002b621a15:0x5829021808137f92!8m2!3d-33.7604856!4d-70.9286604!16s%2Fg%2F11y8fx05vz?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank">Ver en el mapa</a>
             </p>
         </div>
 
